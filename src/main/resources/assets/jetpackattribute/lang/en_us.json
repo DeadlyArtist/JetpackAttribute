@@ -1,6 +1,7 @@
 {
   "item.jetpackattribute.jetpack": "%s Jetpack",
   "attribute.name.generic.jetpack": "Jetpack",
+  "item.jetpackattribute.mechanical_jetpack": "Mechanical Jetpack",
 
   "key.jetpackattribute.engine": "Toggle Engine",
   "key.jetpackattribute.hover": "Toggle Hover Mode",
