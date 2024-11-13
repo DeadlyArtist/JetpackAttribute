@@ -1,0 +1,26 @@
+{
+  "item.jetpackattribute.jetpack": "%s Jetpack",
+  "attribute.name.generic.jetpack": "Jetpack",
+
+  "key.jetpackattribute.engine": "Toggle Engine",
+  "key.jetpackattribute.hover": "Toggle Hover Mode",
+  "key.jetpackattribute.descend": "Descend",
+
+  "subtitle.jetpackattribute.jetpack": "Jetpack",
+
+  "tooltip.jetpackattribute.hold_shift_for_info": "§7Hold §e§oSHIFT §r§7for info",
+  "tooltip.jetpackattribute.on": "ON",
+  "tooltip.jetpackattribute.off": "OFF",
+  "tooltip.jetpackattribute.engine": "ENGINE",
+  "tooltip.jetpackattribute.hover": "HOVER",
+  "tooltip.jetpackattribute.tier": "TIER %s",
+  "tooltip.jetpackattribute.vertical_speed": "§7Vertical Speed: §a%s",
+  "tooltip.jetpackattribute.vertical_acceleration": "§7Vertical Acceleration: §a%s",
+  "tooltip.jetpackattribute.horizontal_speed": "§7Horizontal Speed: §a%s",
+  "tooltip.jetpackattribute.hover_speed": "§7Hover Speed: §a%s",
+  "tooltip.jetpackattribute.descend_speed": "§7Descend Speed: §a%s",
+  "tooltip.jetpackattribute.sprint_modifier": "§7Sprint Modifier: §a%s",
+  "tooltip.jetpackattribute.toggle_engine": "Toggled Engine %s",
+  "tooltip.jetpackattribute.toggle_hover": "Toggled Hover %s",
+  "tooltip.jetpackattribute.state_tooltip_layout": "%s §7| %s §7| %s"
+}

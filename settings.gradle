@@ -8,4 +8,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "iron-jetpacks"
+rootProject.name = "jetpack-attribute"

@@ -1,32 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "iron-jetpacks",
+  "id": "jetpackattribute",
   "version": "${version}",
-  "name": "Iron Jetpacks",
-  "description": "A fully customizable FE powered jetpacks mod!",
+  "name": "Jetpack Attribute",
+  "description": "Adds a jetpack attribute.",
   "authors": [
     "BlakeBr0",
-    "shedaniel"
+    "shedaniel",
+    "Deadly Artist"
   ],
   "license": "MIT",
-  "icon": "assets/iron-jetpacks/icon.png",
+  "icon": "assets/jetpackattribute/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.blakebr0.ironjetpacks.IronJetpacks"
+      "com.deadlyartist.jpa.JPA"
     ],
-    "kubejs-set-recipes": [
-      "com.blakebr0.ironjetpacks.compat.kubejs.KubeJSCompat"
+    "cardinal-components-entity": [
+      "com.deadlyartist.jpa.entity.JComponents"
     ]
   },
   "mixins": [
-    "iron-jetpacks.mixin.json"
+    "jpa.mixin.json"
   ],
   "depends": {
     "fabricloader": ">=0.11.0",
     "fabric": "*",
-    "architectury": "*",
-    "autoconfig1u": "*",
     "minecraft": ">=1.19"
+  },
+  "custom": {
+    "cardinal-components": [
+      "jetpackattribute:settings"
+    ]
   }
 }

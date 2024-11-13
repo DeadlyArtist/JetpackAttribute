@@ -8,17 +8,13 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-    maven { url "https://maven.shedaniel.me" }
-    // for FTL
     maven {
-        name = "Technici4n"
-        url = "https://raw.githubusercontent.com/Technici4n/Technici4n-maven/master/"
-        content {
-            includeGroup "net.fabricmc.fabric-api" // until fabric-api-lookup-api-v1 is merged
-            includeGroup "dev.technici4n"
-        }
+        name = "Ladysnake Mods"
+        url = 'https://maven.ladysnake.org/releases'
     }
-    maven { url "https://storage.googleapis.com/devan-maven/" }
+    maven {
+        url "https://maven.shedaniel.me/"
+    }
 }
 
 dependencies {
@@ -26,15 +22,15 @@ dependencies {
     mappings(loom.officialMojangMappings())
     modImplementation("net.fabricmc:fabric-loader:${project.loader_version}")
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.fabric_version}")
-    modApi("me.sargunvohra.mcmods:autoconfig1u:${project.autoconfig1u_version}") {
-        transitive(false)
-    }
-    modImplementation("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}") {
-        exclude(group: "net.fabricmc.fabric-api")
-        exclude(group: "io.github.prospector")
-    }
-    modImplementation "dev.architectury:architectury-fabric:6.3.49"
-    modImplementation(include("teamreborn:energy:${project.tr_energy_version}"))
+
+    //// Include ////
+    // Cardinal components
+    modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.caridnal_components_version}")
+    modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.caridnal_components_version}")
+
+    //// Dev ////
+    modImplementation "dev.architectury:architectury-fabric:6.2.43"
+    modImplementation "me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}"
 }
 
 processResources {

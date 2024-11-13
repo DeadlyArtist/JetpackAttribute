@@ -1,0 +1,6 @@
+{
+  "jetpack": {
+    "sounds": ["jetpackattribute:jetpack"],
+    "subtitle": "subtitle.jetpackattribute.jetpack"
+  }
+}

@@ -1,6 +1,5 @@
-# Iron Jetpacks
-Adds fully customizable FE powered jetpacks!
+# Jetpack Attribute
+Mainly exists just to better support the [More Progression](https://github.com/DeadlyArtist/MinecraftProgression) mod.
 
-[Version 2.x+ Docs](https://mods.blakebr0.com/docs/ironjetpacks)
-
-[Version 1.x Docs](https://github.com/BlakeBr0/IronJetpacks/wiki)
+## Features
+Adds a single jetpack attribute, which enables a jetpack if equal to 1 (max value).
