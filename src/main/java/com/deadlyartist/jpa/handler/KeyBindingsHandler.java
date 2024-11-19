@@ -53,27 +53,21 @@ public class KeyBindingsHandler {
         Player player = client.player;
         if (player == null)
             return;
-        
-        ItemStack chest = player.getItemBySlot(EquipmentSlot.CHEST);
-        Item item = chest.getItem();
-        
-        if (item instanceof JetpackItem) {
-            JetpackItem jetpack = (JetpackItem) item;
-            boolean engineOn = JetpackUtils.isEngineOn(player);
-            while (keyEngine.consumeClick()) {
-                engineOn = !engineOn;
-                NetworkHandler.sendToServer(NetworkHandler.TOGGLE_ENGINE);
-                Component state = engineOn ? ModTooltips.ON.color(ChatFormatting.GREEN) : ModTooltips.OFF.color(ChatFormatting.RED);
-                player.displayClientMessage(ModTooltips.TOGGLE_ENGINE.args(state), true);
-            }
 
-            boolean hoverOn = JetpackUtils.isEngineOn(player);
-            while (keyHover.consumeClick()) {
-                hoverOn = !hoverOn;
-                NetworkHandler.sendToServer(NetworkHandler.TOGGLE_HOVER);
-                Component state = hoverOn ? ModTooltips.ON.color(ChatFormatting.GREEN) : ModTooltips.OFF.color(ChatFormatting.RED);
-                player.displayClientMessage(ModTooltips.TOGGLE_HOVER.args(state), true);
-            }
+        boolean engineOn = JetpackUtils.isEngineOn(player);
+        while (keyEngine.consumeClick()) {
+            engineOn = !engineOn;
+            NetworkHandler.sendToServer(NetworkHandler.TOGGLE_ENGINE);
+            Component state = engineOn ? ModTooltips.ON.color(ChatFormatting.GREEN) : ModTooltips.OFF.color(ChatFormatting.RED);
+            player.displayClientMessage(ModTooltips.TOGGLE_ENGINE.args(state), true);
+        }
+
+        boolean hoverOn = JetpackUtils.isEngineOn(player);
+        while (keyHover.consumeClick()) {
+            hoverOn = !hoverOn;
+            NetworkHandler.sendToServer(NetworkHandler.TOGGLE_HOVER);
+            Component state = hoverOn ? ModTooltips.ON.color(ChatFormatting.GREEN) : ModTooltips.OFF.color(ChatFormatting.RED);
+            player.displayClientMessage(ModTooltips.TOGGLE_HOVER.args(state), true);
         }
     }
     
